@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Catarina Mateus</string>
+    <string name="yellow_star">Yellow Star</string>
+    <string name="bio_text">I always wanted to be a veterinarian, and in 2016 my dream came true. I love animals and being around them makes me feel complete. In 2019 I started coding and I fell in love with the challenge that it gives me, so I decided to change careers and study in a Bootcamp. Currently I am working in Mobile Development and I love it. I hope in the future I can have a farm full of animals while working as a programmer remotely, this way I will be able to do both things I love!
+    I always wanted to be a veterinarian, and in 2016 my dream came true. I love animals and being around them makes me feel complete. In 2019 I started coding and I fell in love with the challenge that it gives me, so I decided to change careers and study in a Bootcamp. Currently I am working in Mobile Development and I love it. I hope in the future I can have a farm full of animals while working as a programmer remotely, this way I will be able to do both things I love!
+    </string>
+    <string name="android_pet">Android Pet</string>
+</resources>
