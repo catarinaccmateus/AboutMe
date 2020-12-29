@@ -5,16 +5,19 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import androidx.databinding.DataBindingUtil
 import pt.cccm.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("Catarina Mateus")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Using Data Binding: binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        // Using View Binding:  binding = ActivityMainBinding.inflate(layoutInflater)
+        // val view = binding.root
+        // setContentView(view)
+        binding.myName = myName
         val button = binding.doneButton
         button.setOnClickListener{
             addNickname(it)
@@ -29,8 +32,8 @@ class MainActivity : AppCompatActivity() {
         // nicknameView.visibility = View.VISIBLE
         //Same as above:
         binding.apply {
-            nicknameText.text = nicknameInput.text
-            //invalidAll()  -> With dataBinding:  In order to refresh the UI with new data
+            myName?.nickname = nicknameInput.text.toString()
+            invalidateAll() // With dataBinding:  In order to refresh the UI with new data
             nicknameInput.visibility = View.GONE
             doneButton.visibility = View.GONE
             nicknameText.visibility = View.VISIBLE
