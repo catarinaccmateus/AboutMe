@@ -6,4 +6,8 @@
     I always wanted to be a veterinarian, and in 2016 my dream came true. I love animals and being around them makes me feel complete. In 2019 I started coding and I fell in love with the challenge that it gives me, so I decided to change careers and study in a Bootcamp. Currently I am working in Mobile Development and I love it. I hope in the future I can have a farm full of animals while working as a programmer remotely, this way I will be able to do both things I love!
     </string>
     <string name="android_pet">Android Pet</string>
+    <string name="nickname_input" />
+    <string name="user_nickname"></string>
+    <string name="button_nickname">Done</string>
+    <string name="input_hint">What is your Nickname?</string>
 </resources>
